@@ -21,8 +21,8 @@ app = pyrogram.Client(
 app2 = pyrogram.Client(
   "Multi-ClientBot2",
   bot_token=Config.BOT_TOKEN2,
-  api_id=Config.API_ID2,
-  api_hash=Config.API_HASH2,
+  api_id=Config.API_ID,
+  api_hash=Config.API_HASH,
   plugins=plugins
   )
 if __name__ == "__main__" :
