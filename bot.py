@@ -8,15 +8,23 @@ logging.basicConfig(level=logging.DEBUG,
 logger = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
+plugins = dict(root="plugins")
+
+app = pyrogram.Client(
+  "Multi-ClientBot",
+  bot_token=Config.BOT_TOKEN,
+  api_id=Config.API_ID,
+  api_hash=Config.API_HASH,
+  plugins=plugins
+  )
+
+app2 = pyrogram.Client(
+  "Multi-ClientBot2",
+  bot_token=Config.BOT_TOKEN2,
+  api_id=Config.API_ID2,
+  api_hash=Config.API_HASH2,
+  plugins=plugins
+  )
 if __name__ == "__main__" :
-    plugins = dict(
-        root="plugins"
-    )
-    app = pyrogram.Client(
-        "Multi-ClientBot",
-        bot_token=Config.BOT_TOKEN,
-        api_id=Config.API_ID,
-        api_hash=Config.API_HASH,
-        plugins=plugins
-    )
     app.run()
+    app2.run()
