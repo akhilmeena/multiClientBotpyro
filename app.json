@@ -10,8 +10,8 @@
     "custom"
   ],
   "success_url": "https://telegram.me/",
-  "website": "https://github.com/HeimanPictures/HeimanPictures/",
-  "repository": "https://github.com/HeimanPictures/Mdisk-Bot",
+  "website": "https://github.com/akhilmeena/akhilmeena/",
+  "repository": "https://github.com/akhilmeena/multiClientBotpyro",
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token, as a string from botfather.",
