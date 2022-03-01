@@ -25,6 +25,9 @@ app2 = pyrogram.Client(
   api_hash=Config.API_HASH,
   plugins=plugins
   )
+
+  
 if __name__ == "__main__" :
-    app.run()
-    app2.run()
+  #loop.run_until_complete(start_services())
+  app.start()
+  app2.start()
